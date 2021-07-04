@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotionAPI.Console", "NotionAPI.Console\NotionAPI.Console.csproj", "{6CE99B04-FDC5-474B-9EA9-F53934D31DFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotionAPI", "NotionAPI\NotionAPI.csproj", "{5505147E-6C38-4823-96D7-3EDE9E224342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotionAPI.Tests", "NotionAPI.Tests\NotionAPI.Tests.csproj", "{CD0141AE-A356-420B-95B8-05D7307A50ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CE99B04-FDC5-474B-9EA9-F53934D31DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE99B04-FDC5-474B-9EA9-F53934D31DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE99B04-FDC5-474B-9EA9-F53934D31DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE99B04-FDC5-474B-9EA9-F53934D31DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5505147E-6C38-4823-96D7-3EDE9E224342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5505147E-6C38-4823-96D7-3EDE9E224342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5505147E-6C38-4823-96D7-3EDE9E224342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5505147E-6C38-4823-96D7-3EDE9E224342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0141AE-A356-420B-95B8-05D7307A50ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0141AE-A356-420B-95B8-05D7307A50ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0141AE-A356-420B-95B8-05D7307A50ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0141AE-A356-420B-95B8-05D7307A50ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
