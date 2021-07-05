@@ -39,9 +39,17 @@ namespace NotionAPI
             return errors.Count == 0;
         }
 
+        public static bool HasNoWarnings(this NotionObject obj, string name)
+        {
+            var errors = new List<string>();
+            var warnings = new List<string>();
+            GetAllErrors(obj, name, errors, warnings);
+            return warnings.Count == 0;
+        }
+
         private static bool HasNoError(this NotionObject obj)
         {
-            return !(obj is NotionError || obj is NotionClientError);
+            return !(obj is NotionClientError);
         }
 
         private static void GetAllErrors(this NotionObject obj, string name, List<string> errors, List<string> warnings)

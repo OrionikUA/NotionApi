@@ -13,6 +13,10 @@ namespace NotionAPI.Tests
         private List<string> _paths = new List<string>()
         {
             "RetrieveAPageTest1",
+            "ErrorPageTest1",
+            "RetrieveEveryBlockFromSimplePageTest1",
+            "RetrieveEveryBlockFromSimplePageTest2",
+            "RetrieveEveryBlockFromSimplePageTest3"
         };
 
         public IEnumerable<object[]> GetData(MethodInfo methodInfo)

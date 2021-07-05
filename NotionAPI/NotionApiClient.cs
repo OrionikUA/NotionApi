@@ -25,6 +25,14 @@ namespace NotionAPI
             var str = await responce.Content.ReadAsStringAsync();
             return JsonParser.Parse(str);
         }
+
+        public async Task<NotionObject> RetrieveBlockChildren(string id)
+        {
+            var url = _urlBuilder.RetrieveBlockChildrenUrl(id);
+            var responce = await _httpClient.GetAsync(url);
+            var str = await responce.Content.ReadAsStringAsync();
+            return JsonParser.Parse(str);
+        }
     }
 }
 

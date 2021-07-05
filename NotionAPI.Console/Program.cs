@@ -1,6 +1,4 @@
-﻿using NotionAPI.Models;
-
-namespace NotionAPI.Console
+﻿namespace NotionAPI.Console
 {
     internal class Program
     {
@@ -8,12 +6,23 @@ namespace NotionAPI.Console
         
         static void Main(string[] args)
         {
+            //RetrievePage();
+            RetrieveBlockChildren();
+        }
+
+        private static void RetrievePage()
+        {
             var client = new NotionApiClient(Key);
             var page = client.RetrievePage("adfb9cdbd141414fa6dfd37047d0d19f").Result;
-
             page.WriteErrorsAndWarnings("page");
+            System.Console.ReadLine();
+        }
 
-            //System.Console.WriteLine(page);
+        private static void RetrieveBlockChildren()
+        {
+            var client = new NotionApiClient(Key);
+            var page = client.RetrieveBlockChildren("adfb9cdbd141414fa6dfd37047d0d19f").Result;
+            page.WriteErrorsAndWarnings("page");
             System.Console.ReadLine();
         }
     }
