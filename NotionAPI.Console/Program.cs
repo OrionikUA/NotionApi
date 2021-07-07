@@ -1,9 +1,11 @@
-﻿namespace NotionAPI.Console
+﻿using System;
+
+namespace NotionAPI.Console
 {
     internal class Program
     {
-        private const string Key = "";
-        
+        private static string Key => Environment.GetEnvironmentVariable("NotionAPIKey");
+
         static void Main(string[] args)
         {
             //RetrievePage();
