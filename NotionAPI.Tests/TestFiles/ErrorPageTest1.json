@@ -1,6 +1,6 @@
 ﻿{
   "object": "error",
-  "status": 400,
-  "code": "validation_error",
-  "message": "path failed validation: path.pageId should be a valid uuid, instead was `\"adfb9cdbd141414fa6dfd37047d0d19f1\"`."
+  "status": 404,
+  "code": "object_not_found",
+  "message": "Could not find page with ID: 6c47b70f-d549-4758-ba19-4f9d448b5d43."
 }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -16,11 +15,14 @@ namespace NotionAPI.CheckApi
         private static Dictionary<string, string> dictionary = new Dictionary<string, string>
         {
             ["RetrieveEveryBlockFromSimplePageTest1.json"] = "https://api.notion.com/v1/blocks/0d8382e6781240e48a05bce6bbc6c305/children?page_size=100",
-            ["RetrieveEveryBlockFromSimplePageTest2.json"] = "https://api.notion.com/v1/blocks/6c47b70fd5494758ba194f9d448b5d44/children?page_size=100"
+            ["RetrieveEveryBlockFromSimplePageTest2.json"] = "https://api.notion.com/v1/blocks/6c47b70fd5494758ba194f9d448b5d44/children?page_size=100",
+            ["RetrieveAPageTest1.json"] = "https://api.notion.com/v1/pages/6c47b70fd5494758ba194f9d448b5d44",
+            ["ErrorPageTest1.json"] = "https://api.notion.com/v1/pages/6c47b70fd5494758ba194f9d448b5d43",
         };
 
         private static void Main(string[] args)
         {
+            Console.WriteLine("Start.");
             var solutiondir = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName;
             var testProjectPath = Path.Combine(solutiondir, "NotionAPI.Tests");
             var testFilesPath = Path.Combine(testProjectPath, "TestFiles");
