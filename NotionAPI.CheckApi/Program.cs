@@ -18,6 +18,8 @@ namespace NotionAPI.CheckApi
             ["RetrieveEveryBlockFromSimplePageTest2.json"] = "https://api.notion.com/v1/blocks/6c47b70fd5494758ba194f9d448b5d44/children?page_size=100",
             ["RetrieveAPageTest1.json"] = "https://api.notion.com/v1/pages/6c47b70fd5494758ba194f9d448b5d44",
             ["ErrorPageTest1.json"] = "https://api.notion.com/v1/pages/6c47b70fd5494758ba194f9d448b5d43",
+            ["RetrieveAUserTest1.json"] = "https://api.notion.com/v1/users/4b7a02f8-30b0-47c3-8ff4-5c1c6d2f1e41",
+            ["ListAllUsersTest1.json"] = "https://api.notion.com/v1/users",
         };
 
         private static void Main(string[] args)

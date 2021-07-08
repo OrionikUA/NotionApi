@@ -20,6 +20,22 @@ namespace NotionAPI
             _urlBuilder = new UrlBuilderV1();
         }         
 
+        public async Task<NotionObject> RetrieveUser(string id)
+        {
+            var url = _urlBuilder.RetrieveUserUrl(id);
+            var responce = await _httpClient.GetAsync(url);
+            var str = await responce.Content.ReadAsStringAsync();
+            return JsonParser.Parse(str);
+        }
+
+        public async Task<NotionObject> RetrieveUsers()
+        {
+            var url = _urlBuilder.RetrieveUsersUrl();
+            var responce = await _httpClient.GetAsync(url);
+            var str = await responce.Content.ReadAsStringAsync();
+            return JsonParser.Parse(str);
+        }
+
         public async Task<NotionObject> RetrievePage(string id)
         {
             var url = _urlBuilder.RetrievePageUrl(id);

@@ -1,0 +1,10 @@
+﻿{
+  "object": "user",
+  "id": "4b7a02f8-30b0-47c3-8ff4-5c1c6d2f1e41",
+  "name": "Ihor UserTest",
+  "avatar_url": "https://lh3.googleusercontent.com/a/AATXAJwQHjJuPKIkzkuqwtHVgx8ta5MM86-gC3BUYCKr=s100",
+  "type": "person",
+  "person": {
+    "email": "notionapitest@gmail.com"
+  }
+}

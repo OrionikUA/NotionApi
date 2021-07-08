@@ -4,6 +4,7 @@ using NotionAPI.Models;
 using NotionAPI.Models.Blocks;
 using NotionAPI.Models.Mention;
 using NotionAPI.Models.TextContainer;
+using NotionAPI.Models.User;
 
 namespace NotionAPI
 {
@@ -59,10 +60,21 @@ namespace NotionAPI
         {
             switch (objectType)
             {
+                case "user": return type != null ? ParseUserByType(type, text) : JsonConvert.DeserializeObject<NotionUser>(text);
                 case "page": return JsonConvert.DeserializeObject<NotionPageObject>(text);
                 case "error": return JsonConvert.DeserializeObject<NotionError>(text);
                 case "list": return JsonConvert.DeserializeObject<NotionList>(text);
                 case "block": return type != null ? ParseByType(type, text) : JsonConvert.DeserializeObject<NotionBlock>(text);
+                default: return new NotionClientError();
+            }
+        }
+
+        private static NotionObject ParseUserByType(string type, string text)
+        {
+            switch (type)
+            {
+                case "person": return JsonConvert.DeserializeObject<NotionUserPerson>(text);
+                case "bot": return JsonConvert.DeserializeObject<NotionUserBot>(text);
                 default: return new NotionClientError();
             }
         }

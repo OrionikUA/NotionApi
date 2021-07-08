@@ -15,9 +15,11 @@
 
   <ItemGroup>
     <None Remove="TestFiles\" />
+    <None Remove="TestFiles\Postman\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TestFiles\" />
+    <Folder Include="TestFiles\Postman\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="TestFiles\RetrieveAPageTest1.json">
@@ -30,6 +32,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="TestFiles\RetrieveEveryBlockFromSimplePageTest2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="TestFiles\RetrieveAUserTest1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="TestFiles\ListAllUsersTest1.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

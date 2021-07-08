@@ -10,6 +10,7 @@
     <None Remove="Models\Blocks\" />
     <None Remove="Models\TextContainer\" />
     <None Remove="Models\Mention\" />
+    <None Remove="Models\User\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
@@ -19,5 +20,6 @@
     <Folder Include="Models\Blocks\" />
     <Folder Include="Models\TextContainer\" />
     <Folder Include="Models\Mention\" />
+    <Folder Include="Models\User\" />
   </ItemGroup>
 </Project>

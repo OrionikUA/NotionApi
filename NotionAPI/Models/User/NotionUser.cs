@@ -1,7 +1,6 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-namespace NotionAPI.Models
+namespace NotionAPI.Models.User
 {
     public class NotionUser : NotionObject, INotionObject, INotionType
     {
@@ -15,7 +14,6 @@ namespace NotionAPI.Models
         public string AvatarUrl { get; set; }
         [JsonProperty("type")]
         public string Type { get; set; }
-        [JsonProperty("person")]
-        public NotionPerson Person { get; set; }
+        
     }
 }
