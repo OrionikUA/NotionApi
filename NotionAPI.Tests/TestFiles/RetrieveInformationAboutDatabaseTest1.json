@@ -1,0 +1,151 @@
+﻿{
+  "object": "database",
+  "id": "e5f8b182-6586-4cd3-a99f-239e0db6da6c",
+  "created_time": "2021-07-10T13:19:00.000Z",
+  "last_edited_time": "2021-07-10T13:24:00.000Z",
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "RetrieveInformationAboutDatabaseTest1",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "RetrieveInformationAboutDatabaseTest1",
+      "href": null
+    }
+  ],
+  "properties": {
+    "Related to RetrieveInformationAboutDatabaseTest2 (Relation to other database column)": {
+      "id": ";P;s",
+      "name": "Related to RetrieveInformationAboutDatabaseTest2 (Relation to other database column)",
+      "type": "relation",
+      "relation": {
+        "database_id": "076f3373-6921-4b33-a435-14dc7838e3b0",
+        "synced_property_name": "Relation to other database column",
+        "synced_property_id": "hyrG"
+      }
+    },
+    "Select Column": {
+      "id": "DAt`",
+      "name": "Select Column",
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "12d94e60-f0ee-42b7-9c35-3b0c2b4782c4",
+            "name": "Select 1",
+            "color": "default"
+          },
+          {
+            "id": "0d1f0c74-370a-4cea-98f8-7628414333ba",
+            "name": "Select 2",
+            "color": "gray"
+          },
+          {
+            "id": "e6d3a00d-332d-44f2-b19f-9ce147febce5",
+            "name": "Select 3",
+            "color": "pink"
+          }
+        ]
+      }
+    },
+    "Date Column": {
+      "id": "O}BW",
+      "name": "Date Column",
+      "type": "date",
+      "date": {}
+    },
+    "Phone Column": {
+      "id": "QKnQ",
+      "name": "Phone Column",
+      "type": "phone_number",
+      "phone_number": {}
+    },
+    "Number Column": {
+      "id": "TLVi",
+      "name": "Number Column",
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "Checkbox Column": {
+      "id": "Yad>",
+      "name": "Checkbox Column",
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Multi-Select Column": {
+      "id": "f=R{",
+      "name": "Multi-Select Column",
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "39bfa691-3499-4536-a284-09d05b3bb321",
+            "name": "Multi-select 1",
+            "color": "green"
+          },
+          {
+            "id": "be33e257-a367-4380-9191-4c8a34c5f6ac",
+            "name": "Multi-select 2",
+            "color": "orange"
+          },
+          {
+            "id": "246dadcb-59ea-466d-a776-e5b9aacbda25",
+            "name": "Multi-select 3",
+            "color": "gray"
+          }
+        ]
+      }
+    },
+    "Email Column": {
+      "id": "o:>`",
+      "name": "Email Column",
+      "type": "email",
+      "email": {}
+    },
+    "Url Column": {
+      "id": "pYye",
+      "name": "Url Column",
+      "type": "url",
+      "url": {}
+    },
+    "Files Column": {
+      "id": "uNtG",
+      "name": "Files Column",
+      "type": "files",
+      "files": {}
+    },
+    "Text Column": {
+      "id": "vk^s",
+      "name": "Text Column",
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Person Column": {
+      "id": "xy\\A",
+      "name": "Person Column",
+      "type": "people",
+      "people": {}
+    },
+    "Title Column": {
+      "id": "title",
+      "name": "Title Column",
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "page_id",
+    "page_id": "a9e88f4f-78e6-41c2-87ff-1f5cb875d621"
+  }
+}

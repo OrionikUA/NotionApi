@@ -6,9 +6,5 @@ namespace NotionAPI.Models
     {
         [JsonProperty("title")]
         public NotionTitle Title { get; set; }
-
-        public NotionPageProperties()
-        {
-        }
     }
 }

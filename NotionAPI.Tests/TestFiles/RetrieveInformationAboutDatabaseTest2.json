@@ -1,0 +1,121 @@
+﻿{
+  "object": "database",
+  "id": "076f3373-6921-4b33-a435-14dc7838e3b0",
+  "created_time": "2021-07-10T13:23:00.000Z",
+  "last_edited_time": "2021-07-10T13:27:00.000Z",
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "RetrieveInformationAboutDatabaseTest2",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "RetrieveInformationAboutDatabaseTest2",
+      "href": null
+    }
+  ],
+  "properties": {
+    "Rollup Column": {
+      "id": "@@q>",
+      "name": "Rollup Column",
+      "type": "rollup",
+      "rollup": {
+        "rollup_property_name": "Title Column",
+        "relation_property_name": "Relation to other database column",
+        "rollup_property_id": "title",
+        "relation_property_id": "hyrG",
+        "function": "show_original"
+      }
+    },
+    "Created By Column": {
+      "id": "RtN|",
+      "name": "Created By Column",
+      "type": "created_by",
+      "created_by": {}
+    },
+    "Relation to itself Two Columns 2": {
+      "id": "Zx:=",
+      "name": "Relation to itself Two Columns 2",
+      "type": "relation",
+      "relation": {
+        "database_id": "076f3373-6921-4b33-a435-14dc7838e3b0",
+        "synced_property_name": "Relation to itself Two Columns 1",
+        "synced_property_id": "hNVy"
+      }
+    },
+    "Created Time Column": {
+      "id": "dI{i",
+      "name": "Created Time Column",
+      "type": "created_time",
+      "created_time": {}
+    },
+    "Relation to itself Two Columns 1": {
+      "id": "hNVy",
+      "name": "Relation to itself Two Columns 1",
+      "type": "relation",
+      "relation": {
+        "database_id": "076f3373-6921-4b33-a435-14dc7838e3b0",
+        "synced_property_name": "Relation to itself Two Columns 2",
+        "synced_property_id": "Zx:="
+      }
+    },
+    "Relation to other database column": {
+      "id": "hyrG",
+      "name": "Relation to other database column",
+      "type": "relation",
+      "relation": {
+        "database_id": "e5f8b182-6586-4cd3-a99f-239e0db6da6c",
+        "synced_property_name": "Related to RetrieveInformationAboutDatabaseTest2 (Relation to other database column)",
+        "synced_property_id": ";P;s"
+      }
+    },
+    "Formula Column": {
+      "id": "niem",
+      "name": "Formula Column",
+      "type": "formula",
+      "formula": {
+        "expression": "now()"
+      }
+    },
+    "Last Time Edited Column": {
+      "id": "ny>a",
+      "name": "Last Time Edited Column",
+      "type": "last_edited_time",
+      "last_edited_time": {}
+    },
+    "Last Edited By Column": {
+      "id": "pMtp",
+      "name": "Last Edited By Column",
+      "type": "last_edited_by",
+      "last_edited_by": {}
+    },
+    "Relation to itself One Column": {
+      "id": "}tW|",
+      "name": "Relation to itself One Column",
+      "type": "relation",
+      "relation": {
+        "database_id": "076f3373-6921-4b33-a435-14dc7838e3b0",
+        "synced_property_name": "Relation to itself One Column",
+        "synced_property_id": "}tW|"
+      }
+    },
+    "Title Column": {
+      "id": "title",
+      "name": "Title Column",
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "page_id",
+    "page_id": "a9e88f4f-78e6-41c2-87ff-1f5cb875d621"
+  }
+}

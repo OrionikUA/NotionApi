@@ -65,6 +65,7 @@ namespace NotionAPI
                 case "error": return JsonConvert.DeserializeObject<NotionError>(text);
                 case "list": return JsonConvert.DeserializeObject<NotionList>(text);
                 case "block": return type != null ? ParseByType(type, text) : JsonConvert.DeserializeObject<NotionBlock>(text);
+                case "database": return JsonConvert.DeserializeObject<NotionDatabaseObject>(text);
                 default: return new NotionClientError();
             }
         }

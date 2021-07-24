@@ -11,6 +11,9 @@
     <None Remove="Models\TextContainer\" />
     <None Remove="Models\Mention\" />
     <None Remove="Models\User\" />
+    <None Remove="Models\DatabaseDataTypes\" />
+    <None Remove="Converters\" />
+    <None Remove="Models\DatabaseDataTypes\HelperTypes\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
@@ -21,5 +24,8 @@
     <Folder Include="Models\TextContainer\" />
     <Folder Include="Models\Mention\" />
     <Folder Include="Models\User\" />
+    <Folder Include="Models\DatabaseDataTypes\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Models\DatabaseDataTypes\HelperTypes\" />
   </ItemGroup>
 </Project>

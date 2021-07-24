@@ -31,6 +31,15 @@ namespace NotionAPI
             }
         }
 
+        public static void WriteErrorsAndWarnings(this NotionObject obj, string name, out string[] errors, out string[] warnings)
+        {
+            var errorsList = new List<string>();
+            var warningsList = new List<string>();
+            GetAllErrors(obj, name, errorsList, warningsList);
+            errors = errorsList.ToArray();
+            warnings = warningsList.ToArray();
+        }
+
         public static bool HasNoErrors(this NotionObject obj, string name)
         {
             var errors = new List<string>();

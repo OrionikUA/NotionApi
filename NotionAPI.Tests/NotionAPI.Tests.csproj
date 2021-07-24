@@ -40,6 +40,15 @@
     <None Update="TestFiles\ListAllUsersTest1.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="TestFiles\RetrieveInformationAboutDatabaseTest1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="TestFiles\RetrieveInformationAboutDatabaseTest1 %28copy%29.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="TestFiles\RetrieveInformationAboutDatabaseTest2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NotionAPI\NotionAPI.csproj" />

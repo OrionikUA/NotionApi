@@ -18,6 +18,8 @@ namespace NotionAPI.Tests
             "RetrieveEveryBlockFromSimplePageTest2",
             "RetrieveAUserTest1",
             "ListAllUsersTest1",
+            "RetrieveInformationAboutDatabaseTest1",
+            "RetrieveInformationAboutDatabaseTest2",
         };
 
         public IEnumerable<object[]> GetData(MethodInfo methodInfo)

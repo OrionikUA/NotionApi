@@ -11,8 +11,10 @@ namespace NotionAPI
         private const string UsersUrl = "users";
         private const string BlocksUrl = "blocks";
         private const string ChildrenUrl = "children?";
+        private const string DatabasesUrl = "databases";
         private const string PageSizeParameter = "page_size";
 
+        public string GetRetrieveInformationAboutDatabaseUrl(string databaseId) => Path.Combine(MainUrl, ApiVersion, DatabasesUrl, databaseId);
         public string RetrieveUserUrl(string id) => Path.Combine(MainUrl, ApiVersion, UsersUrl, id);
         public string RetrieveUsersUrl() => Path.Combine(MainUrl, ApiVersion, UsersUrl);
         public string RetrievePageUrl(string id) => Path.Combine(MainUrl, ApiVersion, PagesUrl, id);
