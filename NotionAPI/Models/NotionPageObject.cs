@@ -1,5 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
+using NotionAPI.Converters;
 
 namespace NotionAPI.Models
 {
@@ -19,6 +20,7 @@ namespace NotionAPI.Models
         [JsonProperty("archived")]
         public bool Archived { get; set; }
         [JsonProperty("properties")]
+        [JsonConverter(typeof(PageDataContainerConverterJsonConverter))]
         public NotionPageProperties Properties { get; set; }
         [JsonProperty("url")]
         public string Url { get; set; }        

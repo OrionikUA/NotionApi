@@ -14,6 +14,7 @@
     <None Remove="Models\DatabaseDataTypes\" />
     <None Remove="Converters\" />
     <None Remove="Models\DatabaseDataTypes\HelperTypes\" />
+    <None Remove="Models\PageData\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
@@ -27,5 +28,6 @@
     <Folder Include="Models\DatabaseDataTypes\" />
     <Folder Include="Converters\" />
     <Folder Include="Models\DatabaseDataTypes\HelperTypes\" />
+    <Folder Include="Models\PageData\" />
   </ItemGroup>
 </Project>
